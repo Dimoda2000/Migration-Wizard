@@ -1,0 +1,96 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    border-bottom: 1px solid #ccc;
+    font-family: Arial, sans-serif;
+    height: 60px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.landing-logo {
+    width: 100px;
+    height: auto;
+}
+
+.divider {
+    margin: 0 10px;
+    border-left: 2px solid black;
+    height: 30px;
+}
+
+.text {
+    font-size: 20px;
+    color: gray;
+    font-weight: bold;
+}
+
+.account-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logout-option {
+    color: #32059b;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.logout-option:hover {
+    background-color: #f5f5f5;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header {
+        padding: 10px 15px;
+        height: 50px;
+    }
+
+    .landing-logo {
+        width: 80px;
+    }
+
+    .divider {
+        height: 25px;
+    }
+
+    .text {
+        font-size: 18px;
+    }
+
+    .account-section {
+        gap: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 10px 10px;
+        height: 40px;
+    }
+
+    .landing-logo {
+        width: 60px;
+    }
+
+    .divider {
+        height: 20px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+
+    .account-section {
+        gap: 5px;
+    }
+}
