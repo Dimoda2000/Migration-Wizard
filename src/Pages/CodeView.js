@@ -109,7 +109,7 @@ const CodeView = () => {
             value={selectedTables}
             onChange={(event, newValue) => setSelectedTables(newValue)}
             renderInput={(params) => (
-              <TextField {...params} label="Search Tables" variant="outlined" />
+              <TextField {...params} label="Search Objects" variant="outlined" />
             )}
           />
           {/* <Autocomplete
@@ -161,7 +161,7 @@ const CodeView = () => {
 
       {/* Buttons */}
       <div style={buttonContainerStyle}>
-        <a href="./ProjectTable" style={buttonStyle}>
+        <a href="./MigrationPage" style={buttonStyle}>
           BACK
         </a>
         <a
