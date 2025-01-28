@@ -8,6 +8,7 @@ import Box from "@mui/material/Box";
 import UserAccountTab from "./UserAccountTab";
 import Project_create_Sussesful from "./Project_create_Sussecful";
 import HeaderWithButton from "./Header_with_Button";
+import DashboardTab from "./DashboardTab";
 
 // Rename ProjectView to TabPanel for clarity
 export function TabPanel(props) {
@@ -55,6 +56,7 @@ export default function BasicTabs() {
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
           <Tab label="PROJECT" {...a11yProps(0)} />
           <Tab label="USERS" {...a11yProps(1)} />
+          <Tab label="Dashboard" {...a11yProps(2)} />
         </Tabs>
       </Box>
 
@@ -65,6 +67,10 @@ export default function BasicTabs() {
 
       <TabPanel value={value} index={1}>
         <UserAccountTab />
+      </TabPanel>
+
+      <TabPanel value={value} index={2}>
+        <DashboardTab />
       </TabPanel>
     </Box>
   );
