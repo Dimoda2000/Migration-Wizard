@@ -27,6 +27,8 @@ import ProjectTable from "./Pages/ProjectTablePage"
 import ProjectTablePage from './Pages/ProjectTablePage';
 import ExtractionProgressPage from './Pages/ExtractionProgressPage'
 import AddserverPage2 from './Pages/AddserverPage2'
+import MigrationPage from './Pages/MigrationPage'
+
 
 ReactDOM.render(
   <Router>
@@ -58,6 +60,8 @@ ReactDOM.render(
         <Route path="ProjectTablePage" element={<ProjectTablePage />} />
         <Route path="ExtractionProgressPage" element={<ExtractionProgressPage />} />
         <Route path="AddserverPage2" element={<AddserverPage2 />} />
+        <Route path="MigrationPage" element={<MigrationPage/>} />
+        
 
       </Route>
     </Routes>
