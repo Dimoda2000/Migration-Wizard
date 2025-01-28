@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Box, Typography, Checkbox, FormControlLabel } from '@mui/material';
-// import SchemaWithCheckbox from './SchemaWithCheckbox'; // Reuse the same SchemaWithCheckbox component
+
 
 const ViewsTab = ({ schemas }) => {
   return (
