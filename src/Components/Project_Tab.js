@@ -77,12 +77,24 @@ export default function Project_Tab() {
   return (
     <div>
       <Box display="flex" justifyContent="space-between" alignItems="center" mb={3}>
+        {/* <Autocomplete
+          disablePortal
+          options={projects.map((project) => ({ label: project }))}
+          sx={{ width: 300 }}
+          renderInput={(params) => <TextField {...params} label="Search Project" />}
+        /> */}
         <Autocomplete
           disablePortal
           options={projects.map((project) => ({ label: project }))}
           sx={{ width: 300 }}
           renderInput={(params) => <TextField {...params} label="Search Project" />}
+          onChange={(event, value) => {
+            if (value) {
+              handleProjectClick(value.label); // Navigate to the selected project
+            }
+           }}
         />
+
         <Button
           variant="contained"
           startIcon={<AddIcon />}
